@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AvaliaDrive - Sistema de Avaliação para Autoescolas</title>
+    <meta name="description" content="Padronize e digitalize as avaliações de alunos nas aulas práticas. Sistema completo para autoescolas modernas.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                        <img src="logo.png" alt="AvaliaDrive" class="logo-image">
+                        <span class="logo-text">AvaliaDrive</span>
+                    </div>
+                <nav class="nav-menu">
+                    <a href="#problema">O Problema</a>
+                    <a href="#solucao">Solução</a>
+                    <a href="#funcionalidades">Funcionalidades</a>
+                    <a href="#pesquisa">Participe da Pesquisa</a>
+                    <a href="#contato" class="btn-nav">Tenho Interesse</a>
+                </nav>
+                <div class="header-actions">
+                    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Alternar tema">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="close-menu" onclick="toggleMobileMenu()">
+            <i class="fas fa-times"></i>
+        </button>
+        <a href="#problema" onclick="toggleMobileMenu()">O Problema</a>
+        <a href="#solucao" onclick="toggleMobileMenu()">Solução</a>
+        <a href="#funcionalidades" onclick="toggleMobileMenu()">Funcionalidades</a>
+        <a href="#pesquisa" onclick="toggleMobileMenu()">Participe da Pesquisa</a>
+        <a href="#contato" class="btn-mobile" onclick="toggleMobileMenu()">Tenho Interesse</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-rocket"></i>
+                    <span>Produto em Validação - Seja um dos Pioneiros</span>
+                </div>
+                <h1 class="hero-title">
+                    Transforme a Avaliação de Alunos em sua
+                    <span class="highlight">Autoescola</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Sistema digital completo para padronizar avaliações, acompanhar evolução dos alunos e aumentar a taxa de aprovação no exame prático.
+                </p>
+                <div class="hero-cta">
+                    <a href="#pesquisa" class="btn btn-primary btn-large">
+                        <i class="fas fa-clipboard-check"></i>
+                        Participar da Pesquisa
+                    </a>
+                    <a href="#solucao" class="btn btn-outline btn-large">
+                        <i class="fas fa-play-circle"></i>
+                        Ver Como Funciona
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Digital</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Acesso</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">Real-time</div>
+                        <div class="stat-label">Relatórios</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problema Section -->
+    <section id="problema" class="problem-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Desafios Atuais</span>
+                <h2 class="section-title">Você Enfrenta Estes Desafios?</h2>
+                <p class="section-subtitle">Identificamos problemas comuns que autoescolas enfrentam diariamente</p>
+            </div>
+            
+            <div class="problems-grid">
+                <div class="problem-card">
+                    <div class="problem-icon red">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Avaliações em Papel</h3>
+                    <p>Fichas perdidas, ilegíveis e difíceis de organizar. Impossível ter visão consolidada do progresso.</p>
+                </div>
+                
+                <div class="problem-card">
+                    <div class="problem-icon orange">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3>Falta de Padronização</h3>
+                    <p>Cada instrutor avalia de um jeito diferente, gerando inconsistências e reclamações de alunos.</p>
+                </div>
+                
+                <div class="problem-card">
+                    <div class="problem-icon yellow">
+                        <i class="fas fa-eye-slash"></i>
+                    </div>
+                    <h3>Sem Transparência</h3>
+                    <p>Alunos não têm acesso claro ao seu progresso, gerando insegurança e questionamentos.</p>
+                </div>
+                
+                <div class="problem-card">
+                    <div class="problem-icon blue">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Análise Impossível</h3>
+                    <p>Não há dados consolidados para identificar onde os alunos têm mais dificuldade.</p>
+                </div>
+                
+                <div class="problem-card">
+                    <div class="problem-icon purple">
+                        <i class="fas fa-hourglass-half"></i>
+                    </div>
+                    <h3>Tempo Desperdiçado</h3>
+                    <p>Instrutores gastam tempo preenchendo fichas ao invés de focar no ensino.</p>
+                </div>
+                
+                <div class="problem-card">
+                    <div class="problem-icon green">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <h3>Decisão Subjetiva</h3>
+                    <p>Difícil saber quando o aluno está realmente pronto para o exame prático.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solução Section -->
+    <section id="solucao" class="solution-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Nossa Solução</span>
+                <h2 class="section-title">Conheça o AvaliaDrive</h2>
+                <p class="section-subtitle">Sistema completo para digitalizar e padronizar avaliações de aulas práticas</p>
+            </div>
+
+            <div class="solution-content">
+                <div class="solution-features">
+                    <div class="feature-item">
+                        <div class="feature-number">01</div>
+                        <div class="feature-content">
+                            <h3>Avaliações Padronizadas</h3>
+                            <p>Critérios claros e objetivos que todos os instrutores seguem, garantindo consistência e justiça nas avaliações.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-number">02</div>
+                        <div class="feature-content">
+                            <h3>100% Digital</h3>
+                            <p>Esqueça papel! Tudo registrado no celular ou tablet do instrutor em tempo real durante a aula.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-number">03</div>
+                        <div class="feature-content">
+                            <h3>Acesso para Alunos</h3>
+                            <p>Alunos visualizam seu progresso em tempo real, sabem exatamente onde precisam melhorar.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-number">04</div>
+                        <div class="feature-content">
+                            <h3>Relatórios Inteligentes</h3>
+                            <p>Dashboard com métricas, gráficos de evolução e indicadores que mostram quando o aluno está pronto.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="solution-visual">
+                    <div class="mockup-container">
+                        <div class="mockup-screen">
+                            <div class="screen-header">
+                                <div class="screen-dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <div class="screen-title">AvaliaDrive Dashboard</div>
+                            </div>
+                            <div class="screen-content">
+                                <div class="demo-chart">
+                                    <div class="chart-bar" style="height: 60%">
+                                        <span class="bar-label">Baliza</span>
+                                    </div>
+                                    <div class="chart-bar" style="height: 85%">
+                                        <span class="bar-label">Conversão</span>
+                                    </div>
+                                    <div class="chart-bar" style="height: 70%">
+                                        <span class="bar-label">Sinalização</span>
+                                    </div>
+                                    <div class="chart-bar" style="height: 90%">
+                                        <span class="bar-label">Direção</span>
+                                    </div>
+                                </div>
+                                <div class="demo-metrics">
+                                    <div class="metric-box">
+                                        <i class="fas fa-users"></i>
+                                        <div>
+                                            <div class="metric-value">156</div>
+                                            <div class="metric-label">Alunos Ativos</div>
+                                        </div>
+                                    </div>
+                                    <div class="metric-box">
+                                        <i class="fas fa-chart-line"></i>
+                                        <div>
+                                            <div class="metric-value">87%</div>
+                                            <div class="metric-label">Taxa Aprovação</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Funcionalidades Section -->
+    <section id="funcionalidades" class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Recursos</span>
+                <h2 class="section-title">Tudo que Você Precisa em um Único Sistema</h2>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>App Mobile</h3>
+                    <p>Instrutores avaliam direto do celular durante a aula prática</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <h3>Critérios Customizáveis</h3>
+                    <p>Adapte os critérios de avaliação à realidade da sua autoescola</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-history"></i>
+                    </div>
+                    <h3>Histórico Completo</h3>
+                    <p>Todas as avaliações salvas e acessíveis a qualquer momento</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <h3>Notificações</h3>
+                    <p>Alunos recebem feedback após cada aula automaticamente</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3>Dashboards</h3>
+                    <p>Visualize métricas e KPIs importantes da sua autoescola</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-export"></i>
+                    </div>
+                    <h3>Exportação</h3>
+                    <p>Exporte relatórios em PDF ou Excel quando precisar</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Comentários</h3>
+                    <p>Instrutores podem adicionar observações específicas de cada aula</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Indicador de Prontidão</h3>
+                    <p>Sistema mostra quando aluno está pronto para o exame</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefícios Section -->
+    <section class="benefits-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Benefícios</span>
+                <h2 class="section-title">Por Que Escolher o AvaliaDrive?</h2>
+            </div>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Maior Taxa de Aprovação</h3>
+                    <p>Com avaliações precisas, você identifica exatamente onde cada aluno precisa melhorar, aumentando a aprovação no exame.</p>
+                    <div class="benefit-stat">+25% em média</div>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Melhor Reputação</h3>
+                    <p>Processo transparente e profissional gera confiança e melhora a imagem da sua autoescola.</p>
+                    <div class="benefit-stat">4.8/5 satisfação</div>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Economia de Tempo</h3>
+                    <p>Instrutores economizam até 15 minutos por aula eliminando papelada e burocracia.</p>
+                    <div class="benefit-stat">15min/aula</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pesquisa/CTA Section -->
+    <section id="pesquisa" class="research-section">
+        <div class="container">
+            <div class="research-content">
+                <div class="research-info">
+                    <span class="section-label light">Fase de Validação</span>
+                    <h2 class="section-title light">Ajude-nos a Construir a Solução Ideal</h2>
+                    <p class="research-text">
+                        Estamos desenvolvendo o AvaliaDrive e queremos ouvir você! Participe da nossa pesquisa e ajude a moldar um produto que realmente atenda às necessidades da sua autoescola.
+                    </p>
+                    
+                    <div class="research-benefits">
+                        <div class="research-benefit">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Seja um dos primeiros a usar o sistema</span>
+                        </div>
+                        <div class="research-benefit">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Condições especiais para pioneiros</span>
+                        </div>
+                        <div class="research-benefit">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Influencie as funcionalidades do produto</span>
+                        </div>
+                        <div class="research-benefit">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Entrevista de apenas 30-45 minutos</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="research-form-container">
+                    <form id="researchForm" class="research-form">
+                        <h3>Quero Participar da Pesquisa</h3>
+                        
+                        <div class="form-group">
+                            <label for="nome">Nome Completo *</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="autoescola">Nome da Autoescola *</label>
+                            <input type="text" id="autoescola" name="autoescola" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="cargo">Cargo *</label>
+                                <select id="cargo" name="cargo" required>
+                                    <option value="">Selecione...</option>
+                                    <option value="proprietario">Proprietário(a)</option>
+                                    <option value="diretor">Diretor(a)</option>
+                                    <option value="gerente">Gerente</option>
+                                    <option value="instrutor">Instrutor(a)</option>
+                                    <option value="outro">Outro</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="cidade">Cidade *</label>
+                                <input type="text" id="cidade" name="cidade" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">E-mail *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="telefone">Telefone/WhatsApp *</label>
+                                <input type="tel" id="telefone" name="telefone" required placeholder="(00) 00000-0000">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="instrutores">Quantos instrutores sua autoescola possui? *</label>
+                            <select id="instrutores" name="instrutores" required>
+                                <option value="">Selecione...</option>
+                                <option value="1-3">1 a 3</option>
+                                <option value="4-7">4 a 7</option>
+                                <option value="8-15">8 a 15</option>
+                                <option value="16+">Mais de 15</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="interesse">Qual seu principal interesse no AvaliaDrive?</label>
+                            <textarea id="interesse" name="interesse" rows="3" placeholder="Ex: Padronizar avaliações, reduzir papel, melhorar transparência..."></textarea>
+                        </div>
+
+                        <!-- ===== SEÇÃO DE PRECIFICAÇÃO ===== -->
+                        <div class="pricing-research-section" style="margin-top: var(--spacing-xl); padding-top: var(--spacing-xl); border-top: 2px solid var(--border-color);">
+                            <h4 style="color: var(--text-primary); font-size: 1.2rem; margin-bottom: var(--spacing-md);">
+                                Pesquisa de Precificação
+                            </h4>
+                            <p style="color: var(--text-secondary); margin-bottom: var(--spacing-lg); line-height: 1.6;">
+                                Nos ajude a definir o melhor preço! Quanto você pagaria <strong>MENSALMENTE</strong> por um sistema que padroniza avaliações, elimina papelada e aumenta a aprovação dos alunos?
+                            </p>
+
+                            <div class="form-group">
+                                <label for="preco_caro">1. A que preço você consideraria CARO, mas ainda compraria? (R$)</label>
+                                <input type="number" id="preco_caro" name="p_caro" placeholder="Ex: 150" min="0" step="10">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="preco_muito_caro">2. A que preço você consideraria TÃO CARO que NÃO compraria de jeito nenhum? (R$)</label>
+                                <input type="number" id="preco_muito_caro" name="p_mcaro" placeholder="Ex: 300" min="0" step="10">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="preco_barato">3. A que preço você consideraria BARATO, uma boa barganha? (R$)</label>
+                                <input type="number" id="preco_barato" name="p_barato" placeholder="Ex: 80" min="0" step="10">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="preco_muito_barato">4. A que preço você consideraria TÃO BARATO que duvidaria da qualidade? (R$)</label>
+                                <input type="number" id="preco_muito_barato" name="p_mbarato" placeholder="Ex: 30" min="0" step="10">
+                            </div>
+                        </div>
+                        <!-- ===== FIM DA SEÇÃO DE PRECIFICAÇÃO ===== -->
+
+                        <!-- ===== SEÇÃO LEADS ALUNOS ===== -->
+                        <section id="leads-alunos" class="section">
+                            <div class="container">
+                                <div class="section-header" style="text-align: center; margin-bottom: 3rem;">
+                                    <h2 class="section-title">🎓 Quer Tirar Sua CNH?</h2>
+                                    <p class="section-subtitle" style="font-size: 1.2rem; color: var(--text-secondary); max-width: 700px; margin: 0 auto;">
+                                        Cadastre-se e ajude-nos a criar a melhor experiência para você!<br>
+                                        Participe da pesquisa e concorra a <strong>descontos exclusivos</strong>! 🎁
+                                    </p>
+                                </div>
+
+                                <div style="max-width: 800px; margin: 0 auto; background: var(--bg-primary); padding: 2.5rem; border-radius: 16px; box-shadow: var(--shadow-lg);">
+                                    <form id="leadsAlunosForm" class="research-form">
+                                        
+                                        <!-- SEUS DADOS -->
+                                        <div style="margin-bottom: 2.5rem;">
+                                            <h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.3rem; display: flex; align-items: center; gap: 0.5rem;">
+                                                <i class="fas fa-user-circle"></i> Seus Dados
+                                            </h3>
+                                            
+                                            <div class="form-group">
+                                                <label for="aluno_nome">Nome Completo *</label>
+                                                <input type="text" id="aluno_nome" name="aluno_nome" required>
+                                            </div>
+
+                                            <div class="form-row">
+                                                <div class="form-group">
+                                                    <label for="aluno_email">Email *</label>
+                                                    <input type="email" id="aluno_email" name="aluno_email" required>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="aluno_whatsapp">WhatsApp *</label>
+                                                    <input type="tel" id="aluno_whatsapp" name="aluno_whatsapp" placeholder="(00) 00000-0000" required>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="aluno_cidade">Cidade *</label>
+                                                <input type="text" id="aluno_cidade" name="aluno_cidade" placeholder="Ex: Londrina - PR" required>
+                                            </div>
+                                        </div>
+
+                                        <!-- SOBRE SUA CNH -->
+                                        <div style="margin-bottom: 2.5rem;">
+                                            <h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.3rem; display: flex; align-items: center; gap: 0.5rem;">
+                                                <i class="fas fa-car"></i> Sobre Sua CNH
+                                            </h3>
+
+                                            <div class="form-group">
+                                                <label for="quando_comecar">Quando pretende começar as aulas? *</label>
+                                                <select id="quando_comecar" name="quando_comecar" required>
+                                                    <option value="">Selecione...</option>
+                                                    <option value="imediatamente">Imediatamente (este mês)</option>
+                                                    <option value="1-mes">Em até 1 mês</option>
+                                                    <option value="1-3-meses">Em 1-3 meses</option>
+                                                    <option value="nao-sei">Ainda não sei</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="categoria_cnh">Qual categoria de CNH deseja? *</label>
+                                                <select id="categoria_cnh" name="categoria_cnh" required>
+                                                    <option value="">Selecione...</option>
+                                                    <option value="A">Categoria A (Moto)</option>
+                                                    <option value="B">Categoria B (Carro)</option>
+                                                    <option value="AB">Categoria AB (Ambos)</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="experiencia_previa">Já fez alguma aula prática antes? *</label>
+                                                <select id="experiencia_previa" name="experiencia_previa" required>
+                                                    <option value="">Selecione...</option>
+                                                    <option value="primeira-vez">Não, primeira vez</option>
+                                                    <option value="reprovei">Sim, mas reprovei</option>
+                                                    <option value="trocando">Sim, estou trocando de autoescola</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="orcamento">Orçamento mensal para aulas: *</label>
+                                                <select id="orcamento" name="orcamento" required>
+                                                    <option value="">Selecione...</option>
+                                                    <option value="ate-500">Até R$ 500</option>
+                                                    <option value="500-1000">R$ 500 - R$ 1.000</option>
+                                                    <option value="1000-1500">R$ 1.000 - R$ 1.500</option>
+                                                    <option value="acima-1500">Acima de R$ 1.500</option>
+                                                    <option value="nao-sei">Ainda não sei</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <!-- SOBRE O APP AVALIADRIVE -->
+                                        <div style="margin-bottom: 2rem; padding: 1.5rem; background: linear-gradient(135deg, rgba(0, 217, 163, 0.1), rgba(78, 205, 196, 0.1)); border-radius: 12px; border-left: 4px solid var(--primary);">
+                                            <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.3rem; display: flex; align-items: center; gap: 0.5rem;">
+                                                <i class="fas fa-mobile-alt"></i> Sobre o App AvaliaDrive
+                                            </h3>
+                                            
+                                            <p style="color: var(--text-secondary); margin-bottom: 1.5rem; line-height: 1.6;">
+                                                <strong>Imagine um aplicativo onde você pode:</strong><br>
+                                                ✅ Ver suas notas de cada aula prática<br>
+                                                ✅ Acompanhar seu progresso em tempo real<br>
+                                                ✅ Saber exatamente o que precisa melhorar<br>
+                                                ✅ Ver recomendações personalizadas do instrutor<br>
+                                                ✅ Ter histórico completo das suas aulas
+                                            </p>
+
+                                            <div class="form-group">
+                                                <label for="usaria_app">Você usaria um app assim durante suas aulas? *</label>
+                                                <select id="usaria_app" name="usaria_app" required>
+                                                    <option value="">Selecione...</option>
+                                                    <option value="sim-certeza">Sim, com certeza!</option>
+                                                    <option value="provavelmente-sim">Provavelmente sim</option>
+                                                    <option value="talvez">Talvez</option>
+                                                    <option value="provavelmente-nao">Provavelmente não</option>
+                                                    <option value="nao">Não</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label>Quais funcionalidades seriam ESSENCIAIS para você? * (marque até 3)</label>
+                                                <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-top: 0.75rem;">
+                                                    <label class="checkbox-label">
+                                                        <input type="checkbox" name="funcionalidades" value="ver-notas">
+                                                        <span>Ver notas de cada aula</span>
+                                                    </label>
+                                                    <label class="checkbox-label">
+                                                        <input type="checkbox" name="funcionalidades" value="acompanhar-progresso">
+                                                        <span>Acompanhar progresso geral</span>
+                                                    </label>
+                                                    <label class="checkbox-label">
+                                                        <input type="checkbox" name="funcionalidades" value="feedback-instrutor">
+                                                        <span>Receber feedback do instrutor</span>
+                                                    </label>
+                                                    <label class="checkbox-label">
+                                                        <input type="checkbox" name="funcionalidades" value="sugestoes-melhorar">
+                                                        <span>Sugestões de pontos a melhorar</span>
+                                                    </label>
+                                                    <label class="checkbox-label">
+                                                        <input type="checkbox" name="funcionalidades" value="historico-aulas">
+                                                        <span>Histórico completo de aulas</span>
+                                                    </label>
+                                                    <label class="checkbox-label">
+                                                        <input type="checkbox" name="funcionalidades" value="simulados-dicas">
+                                                        <span>Simulados e dicas para o exame</span>
+                                                    </label>
+                                                    <label class="checkbox-label">
+                                                        <input type="checkbox" name="funcionalidades" value="comunicacao">
+                                                        <span>Comunicação com a autoescola</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="quanto_pagaria">Quanto você pagaria por mês para usar esse app? *</label>
+                                                <select id="quanto_pagaria" name="quanto_pagaria" required>
+                                                    <option value="">Selecione...</option>
+                                                    <option value="nada">Não pagaria nada</option>
+                                                    <option value="ate-10">Até R$ 10/mês</option>
+                                                    <option value="10-20">R$ 10 - R$ 20/mês</option>
+                                                    <option value="20-30">R$ 20 - R$ 30/mês</option>
+                                                    <option value="30-50">R$ 30 - R$ 50/mês</option>
+                                                    <option value="acima-50">Acima de R$ 50/mês</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="modelo_pagamento">Você preferiria: *</label>
+                                                <select id="modelo_pagamento" name="modelo_pagamento" required>
+                                                    <option value="">Selecione...</option>
+                                                    <option value="mensal">Pagar mensalmente pelo app</option>
+                                                    <option value="taxa-unica">Pagar taxa única ao se matricular</option>
+                                                    <option value="incluido-autoescola">Que a autoescola incluísse no pacote</option>
+                                                    <option value="gratis-propagandas">Grátis com propagandas</option>
+                                                    <option value="gratis-sem-propagandas">Grátis, sem propagandas</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem; font-size: 1.1rem;">
+                                            <i class="fas fa-paper-plane"></i> Quero Participar!
+                                        </button>
+
+                                        <p style="text-align: center; margin-top: 1rem; font-size: 0.9rem; color: var(--text-secondary);">
+                                            🔒 Seus dados estão seguros e não serão compartilhados
+                                        </p>
+                                    </form>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- MODAL SUCESSO LEADS ALUNOS -->
+                        <div id="alunoSuccessModal" class="modal">
+                            <div class="modal-content">
+                                <span class="modal-close" onclick="closeAlunoModal()">&times;</span>
+                                <div class="modal-icon">🎉</div>
+                                <h2>Cadastro Realizado com Sucesso!</h2>
+                                <p>Obrigado por participar! Em breve você receberá novidades sobre o AvaliaDrive.</p>
+                                <p style="margin-top: 1rem; font-size: 0.95rem; color: var(--text-secondary);">
+                                    📧 Fique de olho no seu email!
+                                </p>
+                                <button onclick="closeAlunoModal()" class="btn btn-primary" style="margin-top: 1.5rem;">
+                                    Fechar
+                                </button>
+                            </div>
+                        </div>
+
+                        <style>
+                        .checkbox-label {
+                            display: flex;
+                            align-items: center;
+                            gap: 0.5rem;
+                            padding: 0.75rem;
+                            background: var(--bg-primary);
+                            border-radius: 8px;
+                            cursor: pointer;
+                            transition: all 0.2s ease;
+                        }
+
+                        .checkbox-label:hover {
+                            background: var(--bg-secondary);
+                        }
+
+                        .checkbox-label input[type="checkbox"] {
+                            width: 20px;
+                            height: 20px;
+                            cursor: pointer;
+                        }
+
+                        .checkbox-label span {
+                            color: var(--text-primary);
+                            font-size: 0.95rem;
+                        }
+                        </style>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="carta_intencao" id="carta_intencao">
+                                <span>Tenho interesse em receber uma proposta comercial quando o produto estiver pronto</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large btn-block">
+                            <i class="fas fa-paper-plane"></i>
+                            Enviar Inscrição
+                        </button>
+
+                        <p class="form-disclaimer">
+                            Seus dados serão utilizados apenas para fins de pesquisa e contato sobre o AvaliaDrive. Não compartilharemos com terceiros.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preços Indicativos Section -->
+    <section class="pricing-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Investimento</span>
+                <h2 class="section-title">Preços Indicativos</h2>
+                <p class="section-subtitle">Valores em fase de validação - estamos testando modelos de precificação</p>
+            </div>
+
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Plano Instrutor</h3>
+                        <p>Por instrutor ativo</p>
+                    </div>
+                    <div class="pricing-value">
+                        <span class="currency">R$</span>
+                        <span class="amount">90</span>
+                        <span class="period">/mês</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> App mobile completo</li>
+                        <li><i class="fas fa-check"></i> Avaliações ilimitadas</li>
+                        <li><i class="fas fa-check"></i> Relatórios básicos</li>
+                        <li><i class="fas fa-check"></i> Suporte por e-mail</li>
+                    </ul>
+                </div>
+
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Mais Popular</div>
+                    <div class="pricing-header">
+                        <h3>Plano Aluno</h3>
+                        <p>Por aluno ativo</p>
+                    </div>
+                    <div class="pricing-value">
+                        <span class="currency">R$</span>
+                        <span class="amount">14</span>
+                        <span class="period">/mês</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Acesso ao app do aluno</li>
+                        <li><i class="fas fa-check"></i> Histórico de avaliações</li>
+                        <li><i class="fas fa-check"></i> Gráficos de evolução</li>
+                        <li><i class="fas fa-check"></i> Notificações em tempo real</li>
+                    </ul>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Plano Autoescola</h3>
+                        <p>Gestão completa</p>
+                    </div>
+                    <div class="pricing-value">
+                        <span class="custom">Sob consulta</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Tudo dos planos anteriores</li>
+                        <li><i class="fas fa-check"></i> Dashboard gerencial</li>
+                        <li><i class="fas fa-check"></i> Relatórios avançados</li>
+                        <li><i class="fas fa-check"></i> Suporte prioritário</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pricing-cta">
+                <p>Quer ajudar a definir o melhor modelo de precificação?</p>
+                <a href="#pesquisa" class="btn btn-outline">Participe da Pesquisa de Preços</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SEÇÃO LEADS ALUNOS ===== -->
+<section id="leads-alunos" class="section">
+    <div class="container">
+        <div class="section-header" style="text-align: center; margin-bottom: 3rem;">
+            <h2 class="section-title">🎓 Quer Tirar Sua CNH?</h2>
+            <p class="section-subtitle" style="font-size: 1.2rem; color: var(--text-secondary); max-width: 700px; margin: 0 auto;">
+                Cadastre-se e ajude-nos a criar a melhor experiência para você!<br>
+                Participe da pesquisa e concorra a <strong>descontos exclusivos</strong>! 🎁
+            </p>
+        </div>
+
+        <div style="max-width: 800px; margin: 0 auto; background: var(--bg-primary); padding: 2.5rem; border-radius: 16px; box-shadow: var(--shadow-lg);">
+            <form id="leadsAlunosForm" class="research-form">
+                
+                <!-- SEUS DADOS -->
+                <div style="margin-bottom: 2.5rem;">
+                    <h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.3rem; display: flex; align-items: center; gap: 0.5rem;">
+                        <i class="fas fa-user-circle"></i> Seus Dados
+                    </h3>
+                    
+                    <div class="form-group">
+                        <label for="aluno_nome">Nome Completo *</label>
+                        <input type="text" id="aluno_nome" name="aluno_nome" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="aluno_email">Email *</label>
+                            <input type="email" id="aluno_email" name="aluno_email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="aluno_whatsapp">WhatsApp *</label>
+                            <input type="tel" id="aluno_whatsapp" name="aluno_whatsapp" placeholder="(00) 00000-0000" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="aluno_cidade">Cidade *</label>
+                        <input type="text" id="aluno_cidade" name="aluno_cidade" placeholder="Ex: Londrina - PR" required>
+                    </div>
+                </div>
+
+                <!-- SOBRE SUA CNH -->
+                <div style="margin-bottom: 2.5rem;">
+                    <h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.3rem; display: flex; align-items: center; gap: 0.5rem;">
+                        <i class="fas fa-car"></i> Sobre Sua CNH
+                    </h3>
+
+                    <div class="form-group">
+                        <label for="quando_comecar">Quando pretende começar as aulas? *</label>
+                        <select id="quando_comecar" name="quando_comecar" required>
+                            <option value="">Selecione...</option>
+                            <option value="imediatamente">Imediatamente (este mês)</option>
+                            <option value="1-mes">Em até 1 mês</option>
+                            <option value="1-3-meses">Em 1-3 meses</option>
+                            <option value="nao-sei">Ainda não sei</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="categoria_cnh">Qual categoria de CNH deseja? *</label>
+                        <select id="categoria_cnh" name="categoria_cnh" required>
+                            <option value="">Selecione...</option>
+                            <option value="A">Categoria A (Moto)</option>
+                            <option value="B">Categoria B (Carro)</option>
+                            <option value="AB">Categoria AB (Ambos)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="experiencia_previa">Já fez alguma aula prática antes? *</label>
+                        <select id="experiencia_previa" name="experiencia_previa" required>
+                            <option value="">Selecione...</option>
+                            <option value="primeira-vez">Não, primeira vez</option>
+                            <option value="reprovei">Sim, mas reprovei</option>
+                            <option value="trocando">Sim, estou trocando de autoescola</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="orcamento">Orçamento mensal para aulas: *</label>
+                        <select id="orcamento" name="orcamento" required>
+                            <option value="">Selecione...</option>
+                            <option value="ate-500">Até R$ 500</option>
+                            <option value="500-1000">R$ 500 - R$ 1.000</option>
+                            <option value="1000-1500">R$ 1.000 - R$ 1.500</option>
+                            <option value="acima-1500">Acima de R$ 1.500</option>
+                            <option value="nao-sei">Ainda não sei</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- SOBRE O APP AVALIADRIVE -->
+                <div style="margin-bottom: 2rem; padding: 1.5rem; background: linear-gradient(135deg, rgba(0, 217, 163, 0.1), rgba(78, 205, 196, 0.1)); border-radius: 12px; border-left: 4px solid var(--primary);">
+                    <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.3rem; display: flex; align-items: center; gap: 0.5rem;">
+                        <i class="fas fa-mobile-alt"></i> Sobre o App AvaliaDrive
+                    </h3>
+                    
+                    <p style="color: var(--text-secondary); margin-bottom: 1.5rem; line-height: 1.6;">
+                        <strong>Imagine um aplicativo onde você pode:</strong><br>
+                        ✅ Ver suas notas de cada aula prática<br>
+                        ✅ Acompanhar seu progresso em tempo real<br>
+                        ✅ Saber exatamente o que precisa melhorar<br>
+                        ✅ Ver recomendações personalizadas do instrutor<br>
+                        ✅ Ter histórico completo das suas aulas
+                    </p>
+
+                    <div class="form-group">
+                        <label for="usaria_app">Você usaria um app assim durante suas aulas? *</label>
+                        <select id="usaria_app" name="usaria_app" required>
+                            <option value="">Selecione...</option>
+                            <option value="sim-certeza">Sim, com certeza!</option>
+                            <option value="provavelmente-sim">Provavelmente sim</option>
+                            <option value="talvez">Talvez</option>
+                            <option value="provavelmente-nao">Provavelmente não</option>
+                            <option value="nao">Não</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Quais funcionalidades seriam ESSENCIAIS para você? * (marque até 3)</label>
+                        <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-top: 0.75rem;">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="funcionalidades" value="ver-notas">
+                                <span>Ver notas de cada aula</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="funcionalidades" value="acompanhar-progresso">
+                                <span>Acompanhar progresso geral</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="funcionalidades" value="feedback-instrutor">
+                                <span>Receber feedback do instrutor</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="funcionalidades" value="sugestoes-melhorar">
+                                <span>Sugestões de pontos a melhorar</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="funcionalidades" value="historico-aulas">
+                                <span>Histórico completo de aulas</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="funcionalidades" value="simulados-dicas">
+                                <span>Simulados e dicas para o exame</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="funcionalidades" value="comunicacao">
+                                <span>Comunicação com a autoescola</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="quanto_pagaria">Quanto você pagaria por mês para usar esse app? *</label>
+                        <select id="quanto_pagaria" name="quanto_pagaria" required>
+                            <option value="">Selecione...</option>
+                            <option value="nada">Não pagaria nada</option>
+                            <option value="ate-10">Até R$ 10/mês</option>
+                            <option value="10-20">R$ 10 - R$ 20/mês</option>
+                            <option value="20-30">R$ 20 - R$ 30/mês</option>
+                            <option value="30-50">R$ 30 - R$ 50/mês</option>
+                            <option value="acima-50">Acima de R$ 50/mês</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="modelo_pagamento">Você preferiria: *</label>
+                        <select id="modelo_pagamento" name="modelo_pagamento" required>
+                            <option value="">Selecione...</option>
+                            <option value="mensal">Pagar mensalmente pelo app</option>
+                            <option value="taxa-unica">Pagar taxa única ao se matricular</option>
+                            <option value="incluido-autoescola">Que a autoescola incluísse no pacote</option>
+                            <option value="gratis-propagandas">Grátis com propagandas</option>
+                            <option value="gratis-sem-propagandas">Grátis, sem propagandas</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem; font-size: 1.1rem;">
+                    <i class="fas fa-paper-plane"></i> Quero Participar!
+                </button>
+
+                <p style="text-align: center; margin-top: 1rem; font-size: 0.9rem; color: var(--text-secondary);">
+                    🔒 Seus dados estão seguros e não serão compartilhados
+                </p>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- MODAL SUCESSO LEADS ALUNOS -->
+<div id="alunoSuccessModal" class="modal">
+    <div class="modal-content">
+        <span class="modal-close" onclick="closeAlunoModal()">&times;</span>
+        <div class="modal-icon">🎉</div>
+        <h2>Cadastro Realizado com Sucesso!</h2>
+        <p>Obrigado por participar! Em breve você receberá novidades sobre o AvaliaDrive.</p>
+        <p style="margin-top: 1rem; font-size: 0.95rem; color: var(--text-secondary);">
+            📧 Fique de olho no seu email!
+        </p>
+        <button onclick="closeAlunoModal()" class="btn btn-primary" style="margin-top: 1.5rem;">
+            Fechar
+        </button>
+    </div>
+</div>
+
+<style>
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    background: var(--bg-primary);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.checkbox-label:hover {
+    background: var(--bg-secondary);
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.checkbox-label span {
+    color: var(--text-primary);
+    font-size: 0.95rem;
+}
+</style>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Dúvidas Frequentes</span>
+                <h2 class="section-title">Perguntas e Respostas</h2>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>O AvaliaDrive já está disponível?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ainda não. Estamos na fase de validação do produto, conversando com autoescolas para entender melhor as necessidades e construir a melhor solução possível. Ao participar da pesquisa, você terá prioridade quando o produto for lançado.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Quanto tempo dura a entrevista de pesquisa?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>A entrevista dura entre 30 e 45 minutos. Pode ser presencial ou por videochamada, conforme sua preferência e disponibilidade.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Preciso pagar para participar da pesquisa?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Não! A participação é 100% gratuita. Na verdade, você estará nos ajudando e terá benefícios exclusivos quando lançarmos o produto.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Como funciona o sistema?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>O instrutor usa um app no celular/tablet para avaliar o aluno durante a aula prática. Os dados ficam salvos na nuvem e podem ser acessados pela autoescola e pelo aluno a qualquer momento. Tudo digital, padronizado e em tempo real.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Funciona sem internet?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim! O app funcionará offline durante a aula e sincronizará os dados automaticamente quando houver conexão.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Meus dados ficarão seguros?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutamente. Utilizaremos as melhores práticas de segurança, com dados criptografados e backup automático. Conformidade total com a LGPD.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact/Footer Section -->
+    <section id="contato" class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Vamos Conversar?</h2>
+                    <p>Tem dúvidas? Quer saber mais sobre o projeto? Entre em contato conosco!</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>E-mail</strong>
+                                <a href="mailto:tdggalvao@gmail.com">tdggalvao@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <i class="fab fa-whatsapp"></i>
+                            <div>
+                                <strong>WhatsApp</strong>
+                                <a href="https://wa.me/5543999219978">(43) 99921-9978</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="quick-contact-form">
+                    <h3>Envie uma Mensagem Rápida</h3>
+                    <form name="contato-rapido" method="POST" data-netlify="true">
+                        <input type="hidden" name="form-name" value="contato-rapido">
+                        <input type="text" name="nome" placeholder="Seu nome" required>
+                        <input type="email" name="email" placeholder="Seu e-mail" required>
+                        <textarea name="mensagem" placeholder="Sua mensagem" rows="4" required></textarea>
+                        <button type="submit" class="btn btn-primary btn-block">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="logo.png" alt="AvaliaDrive" class="logo-image">
+                        <span class="logo-text">AvaliaDrive</span>
+                    </div>
+                    <p>Transformando a forma como autoescolas avaliam seus alunos.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <a href="#problema">O Problema</a>
+                    <a href="#solucao">Solução</a>
+                    <a href="#funcionalidades">Funcionalidades</a>
+                    <a href="#pesquisa">Pesquisa</a>
+                </div>
+                
+                <div class="footer-legal">
+                    <h4>Legal</h4>
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                    <a href="#">LGPD</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 AvaliaDrive. Todos os direitos reservados.</p>
+                <p class="made-with">Feito com <i class="fas fa-heart"></i> para autoescolas brasileiras</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal (Formulário de Pesquisa) -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-icon success">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Inscrição Enviada com Sucesso!</h2>
+            <p>Obrigado por participar da nossa pesquisa. Entraremos em contato em breve para agendar a entrevista.</p>
+            <button onclick="closeModal()" class="btn btn-primary">Fechar</button>
+        </div>
+    </div>
+
+    <!-- Success Modal (Contato Rápido) -->
+    <div id="contactSuccessModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-icon success">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Mensagem Enviada com Sucesso!</h2>
+            <p>Obrigado pelo contato! Responderemos em breve.</p>
+            <button onclick="closeContactModal()" class="btn btn-primary">Fechar</button>
+        </div>
+    </div>
+
+    <!-- Formulário oculto para Netlify Forms detectar -->
+    <form name="contato-rapido" netlify netlify-honeypot="bot-field" hidden>
+        <input type="text" name="nome">
+        <input type="email" name="email">
+        <textarea name="mensagem"></textarea>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
