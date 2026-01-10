@@ -1519,10 +1519,6 @@ section {
     }
 }
 
-.mobile-menu-toggle {
-    display: none !important; /* ADICIONE !important */
-}
-
 @media (max-width: 480px) {
     .hero-title {
         font-size: 1.75rem;
