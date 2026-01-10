@@ -1447,23 +1447,29 @@ section {
     }
 }
 
-/* Desktop - esconde botão mobile com seletores específicos */
-nav .mobile-menu-toggle,
-.nav .mobile-menu-toggle,
-button.mobile-menu-toggle {
+/* Desktop - esconde botão mobile */
+.mobile-menu-toggle {
     display: none !important;
-    visibility: hidden !important;
-    opacity: 0 !important;
 }
 
 @media (max-width: 768px) {
 
+    /* Mobile - mostra botão com especificidade alta */
+    nav .mobile-menu-toggle,
+    .nav .mobile-menu-toggle,
+    button.mobile-menu-toggle,
     .mobile-menu-toggle {
-        display: block !important;
-    }
-    
-    .nav-menu {
-        display: none;
+        display: flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        border: none;
+        color: var(--text-primary);
+        font-size: 1.5rem;
+        cursor: pointer;
+        padding: 0.5rem;
     }
 
     .nav-menu {
