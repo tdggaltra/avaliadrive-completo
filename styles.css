@@ -1448,6 +1448,15 @@ section {
 }
 
 @media (max-width: 768px) {
+
+    .mobile-menu-toggle {
+        display: block;
+    }
+    
+    .nav-menu {
+        display: none;
+    }
+
     .nav-menu {
         display: none;
     }
@@ -1503,6 +1512,11 @@ section {
         grid-template-columns: 1fr;
         gap: var(--spacing-xl);
     }
+}
+
+/* Desktop - esconde botão mobile */
+.mobile-menu-toggle {
+    display: none;
 }
 
 @media (max-width: 480px) {
