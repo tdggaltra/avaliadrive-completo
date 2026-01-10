@@ -1447,15 +1447,15 @@ section {
     }
 }
 
-/* Desktop - esconde botão mobile */
+/* Desktop - esconde botão mobile (ANTES DO @MEDIA) */
 .mobile-menu-toggle {
-    display: none;
+    display: none !important;
 }
 
 @media (max-width: 768px) {
 
     .mobile-menu-toggle {
-        display: block;
+        display: block !important;
     }
     
     .nav-menu {
