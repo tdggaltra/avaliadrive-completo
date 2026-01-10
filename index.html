@@ -23,12 +23,18 @@
                         <img src="logo.png" alt="AvaliaDrive" class="logo-image">
                         <span class="logo-text">AvaliaDrive</span>
                     </div>
-                <nav class="nav-menu">
-                    <a href="#problema">O Problema</a>
-                    <a href="#solucao">Solução</a>
-                    <a href="#funcionalidades">Funcionalidades</a>
-                    <a href="#pesquisa">Participe da Pesquisa</a>
-                    <a href="#contato" class="btn-nav">Tenho Interesse</a>
+                <nav class="nav">
+                    <ul class="nav-menu">
+                        <li><a href="#features" class="nav-link">Funcionalidades</a></li>
+                        <li><a href="#benefits" class="nav-link">Benefícios</a></li>
+                        <li><a href="#pricing" class="nav-link">Precificação</a></li>
+                        <li><a href="#leads-alunos" class="nav-link btn-secondary">🎓 Tirar CNH</a></li> <!-- 👈 COM ESTILO -->
+                        <li><a href="#faq" class="nav-link">FAQ</a></li>
+                        <li><a href="#contact" class="nav-link btn-cta">Solicitar Demo</a></li>
+                    </ul>
+                    <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                        <i class="fas fa-bars"></i>
+                    </button>
                 </nav>
                 <div class="header-actions">
                     <button class="theme-toggle" onclick="toggleTheme()" aria-label="Alternar tema">
@@ -51,6 +57,7 @@
         <a href="#solucao" onclick="toggleMobileMenu()">Solução</a>
         <a href="#funcionalidades" onclick="toggleMobileMenu()">Funcionalidades</a>
         <a href="#pesquisa" onclick="toggleMobileMenu()">Participe da Pesquisa</a>
+        <a href="#leads-alunos" class="btn-mobile-secondary" onclick="toggleMobileMenu()">🎓 Tirar CNH</a> <!-- 👈 COM CLASSE -->
         <a href="#contato" class="btn-mobile" onclick="toggleMobileMenu()">Tenho Interesse</a>
     </div>
 

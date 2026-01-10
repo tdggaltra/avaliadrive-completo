@@ -1519,3 +1519,34 @@ section {
         grid-template-columns: 1fr;
     }
 }
+
+.btn-secondary {
+    background: linear-gradient(135deg, #4ECDC4, #00D9A3);
+    color: white !important;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-secondary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 217, 163, 0.3);
+}
+
+.btn-mobile-secondary {
+    background: linear-gradient(135deg, #4ECDC4, #00D9A3);
+    color: white !important;
+    padding: 1rem;
+    border-radius: 12px;
+    font-weight: 600;
+    margin: 0.5rem 0;
+    display: block;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.btn-mobile-secondary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 217, 163, 0.4);
+}
