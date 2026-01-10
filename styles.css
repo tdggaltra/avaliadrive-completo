@@ -1447,9 +1447,13 @@ section {
     }
 }
 
-/* Desktop - esconde botão mobile (ANTES DO @MEDIA) */
-.mobile-menu-toggle {
+/* Desktop - esconde botão mobile com seletores específicos */
+nav .mobile-menu-toggle,
+.nav .mobile-menu-toggle,
+button.mobile-menu-toggle {
     display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
 }
 
 @media (max-width: 768px) {
