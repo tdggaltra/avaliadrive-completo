@@ -1447,6 +1447,11 @@ section {
     }
 }
 
+/* Desktop - esconde botão mobile */
+.mobile-menu-toggle {
+    display: none;
+}
+
 @media (max-width: 768px) {
 
     .mobile-menu-toggle {
@@ -1514,10 +1519,6 @@ section {
     }
 }
 
-/* Desktop - esconde botão mobile */
-.mobile-menu-toggle {
-    display: none;
-}
 
 @media (max-width: 480px) {
     .hero-title {
