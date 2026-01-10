@@ -1519,6 +1519,9 @@ section {
     }
 }
 
+.mobile-menu-toggle {
+    display: none !important; /* ADICIONE !important */
+}
 
 @media (max-width: 480px) {
     .hero-title {
