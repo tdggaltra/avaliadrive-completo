@@ -1550,3 +1550,37 @@ section {
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0, 217, 163, 0.4);
 }
+
+/* Botão secundário no menu desktop */
+.btn-secondary {
+    background: linear-gradient(135deg, #4ECDC4, #00D9A3) !important;
+    color: white !important;
+    padding: 0.6rem 1.2rem !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.btn-secondary:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 12px rgba(0, 217, 163, 0.3) !important;
+}
+
+/* Botão secundário no menu mobile */
+.btn-mobile-secondary {
+    background: linear-gradient(135deg, #4ECDC4, #00D9A3);
+    color: white !important;
+    padding: 1rem;
+    border-radius: 12px;
+    font-weight: 600;
+    margin: 0.5rem 0;
+    display: block;
+    text-align: center;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.btn-mobile-secondary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 217, 163, 0.4);
+}
